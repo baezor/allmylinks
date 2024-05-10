@@ -1,61 +1,41 @@
 const userData = [
   {
-    userName: "Sofia Osorio",
-    userDesc: "Web Developer",
-    userPic: "https://github.com/SofiDevO.png",
-    userPicDark: "/img/pedro_raccon.gif",
+    userName: "Angel Baez",
+    userDesc: "Software Developer and entrepreneur",
+    userPic: "/images/pedro_raccon.gif",
+    userPicDark: "/images/pedro_raccon.gif",
   },
 ];
-
-
-
 
 const socialLinks = [
   {
     socialName: "LinkedIn",
-    socialUl: "#",
+    socialUl: "https://www.linkedin.com/in/baezor/",
     socialIcon: "mingcute:linkedin-fill",
   },
   {
     socialName: "GitHub",
-    socialUl: "#",
+    socialUl: "https://github.com/baezor/",
     socialIcon: "fa6-brands:github-alt",
   },
   {
     socialName: "Instagram",
-    socialUl: "#",
+    socialUl: "https://www.instagram.com/baez0r/",
     socialIcon: "ri:instagram-fill",
   },
   {
     socialName: "X",
-    socialUl: "#",
+    socialUl: "https://twitter.com/baezor/",
     socialIcon: "prime:twitter",
-  },
-  {
-    socialName: "Whatsapp",
-    socialUl: "#",
-    socialIcon: "mingcute:whatsapp-fill",
   },
 ];
 
 const userLinks = [
-    {
-        title: "Portfolio",
-        link:"https://itssofi.dev/",
-        icon:"ant-design:code-filled"
-    },
-    {
-        title: "Sucríbete a mi canal",
-        link:"https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw",
-        icon:"mingcute:youtube-fill"
-
-    },
-    {
-        title: "Únete a Discord",
-        link:"https://discord.com/invite/wjERezH2",
-        icon:"ic:outline-discord"
-    },
-]
-
+  {
+    title: "Prepa IN",
+    link: "https://prepain.mx/blog/author/angel/",
+    icon: "ant-design:code-filled",
+  },
+];
 
 export { userData, userLinks, socialLinks };

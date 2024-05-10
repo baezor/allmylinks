@@ -1,10 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 import SocialLinks from "./SocialLinks.astro";
 import { userData } from "../data/userData.js";
+
+const profilePhoto = userData[0].userPic;
 ---
 
 <div class="profile__banner">
-  <div id="img__container" class="img__container photo"></div>
+  <div id="img__container" class="img__container photo">
+    <Image width="150" height="150" src={profilePhoto} alt="A description of my image." />
+  </div>
   {
     userData.map((data) => (
       <>
@@ -30,11 +35,13 @@ import { userData } from "../data/userData.js";
     gap: 0.5rem;
     h1 {
       font-size: 2.5rem;
-      font-weight: 600;
+      font-weight: 800;
+      margin-block: 0.25rem;
       color: var(--text-bold-color);
     }
     p {
       font-size: 1.6rem;
+      margin: 0.25rem 0 2rem 0;
       color: var(--button-hover);
     }
   }
@@ -47,18 +54,22 @@ import { userData } from "../data/userData.js";
 
   .img__container {
     border-radius: 50%;
-    border: 3px solid var(--border-color);
+    border: 4px solid var(--border-color);
     width: 15rem;
     height: 15rem;
     overflow: hidden;
-    background: no-repeat center center / cover;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+    }
   }
 
   .photo {
-    background-image: url(/img/sofi_light.jpg);
+    background-color: white;
   }
   :global(.dark) .photo {
     border: 3px solid aqua;
-    background-image: url(/img/sofi_dark.jpg);
   }
 </style>

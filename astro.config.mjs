@@ -5,6 +5,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: "https://allmylinks-ten.vercel.app/",
+  site: "https://baezor.io/",
   prefetch: true
 });

@@ -1,5 +1,5 @@
 {
-  "name": "allmylinks",
+  "name": "@baezor/allmylinks",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -24,7 +24,8 @@
   "keywords": [
     "astro",
     "allMyLinks",
-    "sofidev"
+    "sofidev",
+    "baezor"
   ],
   "author": "SofiDev",
   "license": "MIT"
