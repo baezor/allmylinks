@@ -1,14 +1,17 @@
 ---
-import { Image } from 'astro:assets';
-import SocialLinks from "./SocialLinks.astro";
+import { Image } from "astro:assets";
 import { userData } from "../data/userData.js";
-
 const profilePhoto = userData[0].userPic;
 ---
 
 <div class="profile__banner">
   <div id="img__container" class="img__container photo">
-    <Image width="150" height="150" src={profilePhoto} alt="A description of my image." />
+    <Image
+      width="150"
+      height="150"
+      src={profilePhoto}
+      alt="A description of my image."
+    />
   </div>
   {
     userData.map((data) => (
@@ -18,7 +21,6 @@ const profilePhoto = userData[0].userPic;
       </>
     ))
   }
-  <SocialLinks />
 </div>
 
 <style>
@@ -34,14 +36,14 @@ const profilePhoto = userData[0].userPic;
     padding-top: 3rem;
     gap: 0.5rem;
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       font-weight: 800;
-      margin-block: 0.25rem;
+      margin: 1rem 0 0 0;
       color: var(--text-bold-color);
     }
     p {
       font-size: 1.6rem;
-      margin: 0.25rem 0 2rem 0;
+      margin: 0.25rem 0 1.5rem 0;
       color: var(--button-hover);
     }
   }
@@ -55,14 +57,13 @@ const profilePhoto = userData[0].userPic;
   .img__container {
     border-radius: 50%;
     border: 4px solid var(--border-color);
-    width: 15rem;
-    height: 15rem;
+    width: 12.5rem;
+    height: 12.5rem;
     overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-    
     }
   }
 

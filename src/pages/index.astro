@@ -1,23 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Boton from "../components/Boton.astro";
-import ThemeIcon from "../components/ThemeIcon.astro";
-import Header from "../components/Header.astro";
+import ProfilePicture from "../components/ProfilePicture.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import Links from "../components/Links.astro";
+import DarkLightThemeSwitch from "../components/DarkLightThemeSwitch.astro";
 ---
 
 <Layout>
-  <ThemeIcon/>
+  <header>
+    <DarkLightThemeSwitch/>
+  </header>
   <main>
-    <Header/>
-    <Boton/>
+    <ProfilePicture/>
+    <SocialLinks />
+    <Links/>
   </main>
 </Layout>
-
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-</style>

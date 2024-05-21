@@ -1,7 +1,7 @@
 const userData = [
   {
     userName: "Angel Baez",
-    userDesc: "Software Developer and entrepreneur",
+    userDesc: "developer and entrepreneur",
     userPic: "/images/pedro_raccon.gif",
     userPicDark: "/images/pedro_raccon.gif",
   },
