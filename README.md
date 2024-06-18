@@ -13,9 +13,9 @@ This template is a clone of the popular [Linktree](https://linktr.ee/) service, 
 
 ## Installation
 
-1. Clone this repository. `git clone
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
+1. Clone this repository. `git clone git@github.com:baezor/allmylinks.git allmylinks`.
+2. Navigate to the project directory using `cd allmylinks`.
+3. Install dependencies and start the server `npm i && npm run start`.
 
 ## Usage
 
@@ -28,11 +28,8 @@ This template is a clone of the popular [Linktree](https://linktr.ee/) service, 
 
 To customize the links displayed in your application, follow these steps:
 
-1. Open the `src/userData.js` file in your project.
-2. Locate the section containing the information of the user links (`links`).
-3. Modify each object within the `links` array with the information you want to display. You can change the link title, the link itself, and the associated icon.
-
-Here's an example of how you can change the information of the links:
+1. Open the `src/data/index.ts` file in your project.
+2. You'll see an array of objects with the information of the links. Add, remove, or update the links as needed.
 
 ```javascript
 const links = [
@@ -47,4 +44,4 @@ const links = [
 ];
 ```
 
-5. Once you have updated the information of the links in the `userData.js` file, the changes will be automatically reflected in your application when you rebuild or run it.
+5. Once you have updated the information of the links in the `src/data/index.ts` file, the changes will be automatically reflected in your application when you rebuild or run it.
