@@ -1,22 +1,14 @@
 ---
-import { socialLinks } from "../data/userData.js";
+import { Icon } from "astro-icon/components";
+import { socialLinks } from "../data/userData";
 ---
 
 <div class="social">
   {
-    socialLinks.map((icono) => (
-      <a
-        href={icono.socialUl}
-        target="_blank"
-        rel="nofollow noreferrer noopener"
-        data-astro-prefetch
-      >
-        <iconify-icon
-          icon={icono.socialIcon}
-          width="25"
-          height="25"
-          class="iconify"
-        />
+    socialLinks.map((i) => (
+      <a href={i.url}>
+        {i.label}
+        <span>{i.icon && <Icon name={`${i.icon}`} />}</span>
       </a>
     ))
   }
@@ -39,9 +31,7 @@ import { socialLinks } from "../data/userData.js";
       color: var(--button-active);
     }
   }
-  :global(.dark) .iconify{
+  :global(.dark) .iconify {
     color: var(--cards);
   }
-
-
 </style>

@@ -52,10 +52,18 @@
 
 <style>
   .header {
-    padding: 0.8rem;
+    padding: 16px;
     display: flex;
     justify-content: end;
     position: relative;
+    position: fixed;
+    width: 100%;
+    max-width: 586px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
   }
   #themeToggle {
     border: 0;
@@ -73,6 +81,6 @@
     fill: transparent;
   }
   :global(.dark) .moon {
-    fill: var(--text-highligth);
+    fill: white;
   }
 </style>

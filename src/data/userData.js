@@ -1,41 +1,43 @@
 const userData = [
   {
     userName: "Angel Baez",
-    userDesc: "developer and entrepreneur",
-    userPic: "/images/pedro_raccon.gif",
-    userPicDark: "/images/pedro_raccon.gif",
+    userDesc: "Developer and Entrepreneur",
+    userPic: "/angelbaez-headshot.jpg",
+    userPicDark: "/angelbaez-headshot.jpg",
   },
 ];
 
-const socialLinks = [
+const links = [
   {
-    socialName: "LinkedIn",
-    socialUl: "https://www.linkedin.com/in/baezor/",
-    socialIcon: "mingcute:linkedin-fill",
+    label: "Add me to your network on LinkedIn",
+    url: "https://www.linkedin.com/in/baezor/",
+    icon: "mdi:linkedin",
   },
   {
-    socialName: "GitHub",
-    socialUl: "https://github.com/baezor/",
-    socialIcon: "fa6-brands:github-alt",
+    label: "Check out my GitHub",
+    url: "https://github.com/baezor/",
+    icon: "mdi:github",
   },
   {
-    socialName: "Instagram",
-    socialUl: "https://www.instagram.com/baez0r/",
-    socialIcon: "ri:instagram-fill",
+    label: "Follow me on Instagram",
+    url: "https://www.instagram.com/baez0r/",
+    icon: "mdi:instagram",
   },
   {
-    socialName: "X",
-    socialUl: "https://twitter.com/baezor/",
-    socialIcon: "prime:twitter",
+    label: "Follow me on X",
+    url: "https://x.com/baezor/",
+    icon: "mdi:twitter",
+  },
+  {
+    label: "@baez0r on Threads",
+    url: "https://www.threads.net/@baez0r",
+    icon: "mdi:instagram",
+  },
+  {
+    label: "Prepa IN Blog",
+    url: "https://prepain.mx/blog/author/angel/",
+    icon: "mdi:rss",
   },
 ];
 
-const userLinks = [
-  {
-    title: "Prepa IN",
-    link: "https://prepain.mx/blog/author/angel/",
-    icon: "ant-design:code-filled",
-  },
-];
-
-export { userData, userLinks, socialLinks };
+export { userData, links };

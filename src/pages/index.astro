@@ -7,12 +7,11 @@ import DarkLightThemeSwitch from "../components/DarkLightThemeSwitch.astro";
 ---
 
 <Layout>
-  <header>
-    <DarkLightThemeSwitch/>
-  </header>
   <main>
-    <ProfilePicture/>
-    <SocialLinks />
-    <Links/>
+    <div class="layout-links">
+      <DarkLightThemeSwitch />
+      <ProfilePicture />
+      <Links />
+    </div>
   </main>
 </Layout>

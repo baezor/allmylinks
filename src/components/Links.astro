@@ -1,58 +1,73 @@
 ---
-import { userLinks } from "../data/userData.js";
+import { links } from "../data/userData.js";
 ---
 
-<section class="botones">
+<section class="links-container">
   {
-    userLinks.map((data) => (
-      <a
-        href={data.link}
-        class="boton"
-        data-astro-prefetch
-        target="_blank"
-        rel="nofollow noreferrer noopener"
-      >
+    links.map((link) => (
+      <a href={link.url} class="link" target="_blank" rel="noopener">
         <>
-          <iconify-icon
-            icon={data.icon}
-            width="25"
-            height="25"
-            class="iconify"
-          />
-          <span>{data.title}</span>
+          <span>{link.label}</span>
         </>
       </a>
     ))
   }
+  <p class="small">
+    Built by me. Use my code for your own site. <a
+      href="https://github.com/baezor/allmylinks"
+      target="_blank"
+      rel="noopener">Download the source code</a
+    >.
+  </p>
 </section>
 
 <style>
-  .botones {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+  .links-container {
+    margin-top: 32px;
   }
-  .boton {
+  .small {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 500;
+    a {
+      color: var(--text-color);
+      text-decoration: underline;
+    }
+  }
+  .link {
     text-align: center;
     display: flex;
     gap: 3rem;
+    margin-bottom: 16px;
+    justify-content: center;
     align-items: center;
-    min-height: 5dvh;
+    hyphens: auto;
+    white-space: normal;
     padding: 1rem 2rem;
-    max-width: 30rem;
-    background-color: var(--button-flat);
-    color: var(--secundary-color);
-    font-size: 1.8rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    border-radius: 9999px;
+    border-radius: 14px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding-left: 66px;
+    padding-right: 66px;
+    appearance: none;
+    min-height: 64px;
+    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3);
 
     &&:hover {
-      background-color: var(--button-hover);
+      transform: scale(1.02);
+      background-color: rgb(0 0 0 / 0.8);
     }
     &&:active {
-      background-color: var(--button-active);
+      transform: scale(1.02);
+      background-color: rgb(0 0 0 / 0.8);
     }
   }
 
