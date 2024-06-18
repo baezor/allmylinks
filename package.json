@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/react": "^3.3.2",
     "@astrojs/rss": "^4.0.5",
-    "@fontsource-variable/montserrat": "^5.0.19",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.7.1",
@@ -28,7 +27,7 @@
     "sofidev",
     "baezor"
   ],
-  "author": "SofiDev",
+  "author": "baezor",
   "license": "MIT",
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.66"

@@ -12,6 +12,6 @@ export default defineConfig({
       },
     }),
   ],
-  site: "https://baezor.io/",
+  site: "https://angel-baez.com/",
   prefetch: true,
 });
