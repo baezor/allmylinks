@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import icon from "astro-icon";
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,6 +10,11 @@ export default defineConfig({
     icon({
       include: {
         mdi: ["linkedin", "github", "twitter", "email", "instagram", "rss"],
+      },
+    }),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
       },
     }),
   ],
