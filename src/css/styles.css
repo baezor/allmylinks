@@ -42,9 +42,3 @@ main {
   justify-content: center;
   padding: 64px 16px;
 }
-
-.layout-links {
-  max-width: 584px;
-  margin: 0 auto;
-  width: 100%;
-}
