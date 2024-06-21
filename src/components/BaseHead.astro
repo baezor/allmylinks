@@ -5,8 +5,6 @@ interface Props {
   image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const { title, description, image = "../img/Logo1.png" } = Astro.props;
 ---
 
@@ -15,7 +13,7 @@ const { title, description, image = "../img/Logo1.png" } = Astro.props;
 <link rel="icon" type="image/svg+xml" href="/../../img/astro.png" />
 <meta name="generator" content={Astro.generator} />
 
-<link rel="canonical" href={canonicalURL} />
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
 
 <title>{title}</title>
 <meta name="title" content={title} />
@@ -26,9 +24,11 @@ const { title, description, image = "../img/Logo1.png" } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="Angel Baez" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta name="twitter:site" content="@baezor" />
