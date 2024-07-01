@@ -1,0 +1,54 @@
+---
+import DarkLightThemeSwitch from "@/components/DarkLightThemeSwitch.astro";
+---
+
+<header>
+  <a class="index" href="/">Angel Baez</a>
+  <nav>
+    <DarkLightThemeSwitch />
+  </nav>
+</header>
+
+<style>
+  .index {
+    opacity: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 616px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 16px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 16px;
+      margin: 0;
+      align-items: center;
+      list-style: none;
+      li {
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+</style>

@@ -9,6 +9,16 @@ const userData = [
 
 const links = [
   {
+    label: "My Blog",
+    url: "https://blog.angel-baez.com/",
+    icon: "mdi:rss",
+  },
+  {
+    label: "Prepa IN's Blog (Spanish)",
+    url: "https://prepain.mx/blog/author/angel/",
+    icon: "mdi:rss",
+  },
+  {
     label: "Add me to your network on LinkedIn",
     url: "https://www.linkedin.com/in/baezor/",
     icon: "mdi:linkedin",
@@ -34,9 +44,8 @@ const links = [
     icon: "mdi:instagram",
   },
   {
-    label: "Prepa IN Blog",
-    url: "https://prepain.mx/blog/author/angel/",
-    icon: "mdi:rss",
+    label: "Tiktok",
+    url: "https://www.tiktok.com/@angelbaezor",
   },
 ];
 
