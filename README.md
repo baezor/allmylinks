@@ -1,15 +1,6 @@
 # All My Links
 
-> A Linktree-like template made with Astro
-
-[![Astro](https://img.shields.io/badge/astro-4.7.1-blue.svg)](https://astro.build)
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/baezor/allmylinks)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-## Description
-
-Create a simple and elegant page to display all your links in one place.
-This template is a clone of the popular [Linktree](https://linktr.ee/) service, but built with Astro.
+> All my social media links!
 
 ## Installation
 
@@ -26,7 +17,7 @@ This template is a clone of the popular [Linktree](https://linktr.ee/) service, 
 
 ## Updating your links
 
-To customize the links displayed in your application, follow these steps:
+Feel free to use my template for your own site. To customize the links displayed in your application, follow these steps:
 
 1. Open the `src/data/index.ts` file in your project.
 2. You'll see an array of objects with the information of the links. Add, remove, or update the links as needed.
