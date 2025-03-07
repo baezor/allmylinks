@@ -2,26 +2,27 @@
 import { Image } from "astro:assets";
 import { userData } from "../data";
 const profilePhoto = userData[0].userPic;
+const userName = userData[0].userName;
+const userDesc = userData[0].userDesc;
 ---
 
-<div class="profile-top">
+<div class="profile-top" itemscope itemtype="https://schema.org/Person">
   <div class="mb-4">
     <Image
       id="profile-picture"
       width="96"
       height="96"
       src={profilePhoto}
-      alt="A description of my image."
+      alt={`Profile photo of ${userName}`}
+      loading="eager"
+      itemprop="image"
+      fetchpriority="high"
+      format="avif"
+      quality={80}
     />
   </div>
-  {
-    userData.map((data) => (
-      <>
-        <h1 class="profile-name">{data.userName}</h1>
-        <h2 class="profile-subtitle">{data.userDesc}</h2>
-      </>
-    ))
-  }
+  <h1 class="profile-name" itemprop="name">{userName}</h1>
+  <h2 class="profile-subtitle" itemprop="description">{userDesc}</h2>
 </div>
 
 <style>

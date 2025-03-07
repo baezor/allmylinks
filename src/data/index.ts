@@ -1,18 +1,13 @@
 const userData = [
   {
-    userName: "Angel Baez",
-    userDesc: "Developer and Entrepreneur",
+    userName: "Angel Romero Baez",
+    userDesc: "AI Engineer, Web Developer, and Entrepreneur",
     userPic: "/angelbaez-headshot.jpg",
     userPicDark: "/angelbaez-headshot.jpg",
   },
 ];
 
 const links = [
-  {
-    label: "My Blog",
-    url: "https://blog.angel-baez.com/",
-    icon: "mdi:rss",
-  },
   {
     label: "Prepa IN's Blog (Spanish)",
     url: "https://prepain.mx/blog/author/angel/",

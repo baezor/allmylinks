@@ -19,6 +19,23 @@
   margin: 0;
   padding: 0;
 }
+
+/* Font loading optimization to prevent layout shifts */
+.fonts-loading {
+  font-display: swap;
+}
+
+/* Add content-visibility for better rendering performance */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Ensure images don't break layout */
+img {
+  height: auto;
+  object-fit: cover;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -28,6 +45,13 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  /* Improve performance on mobile */
+  -webkit-tap-highlight-color: transparent;
+  /* Prevent content reflow */
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .dark body {
