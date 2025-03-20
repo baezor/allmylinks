@@ -31,6 +31,7 @@
   "author": "baezor",
   "license": "MIT",
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.66"
+    "@iconify-json/mdi": "^1.1.66",
+    "@iconify-json/simple-icons": "^1.2.29"
   }
 }
