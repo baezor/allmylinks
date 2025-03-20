@@ -7,6 +7,7 @@
   --main-color: black;
   --secundary-color: #f3f0ff;
   --text-bold-color: #2b007a;
+  --text-secondary: #6b7280;
   --text-highligth: #770fff;
   /* Darkmode */
   --bg-color-dark: #18181b;
@@ -64,5 +65,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 64px 16px;
+  padding: 84px 16px 64px; /* Add extra top padding for fixed header */
+  width: 100%;
 }

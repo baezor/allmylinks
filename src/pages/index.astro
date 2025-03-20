@@ -3,12 +3,13 @@ import Layout from "@/layouts/Layout.astro";
 import ProfilePicture from "@/components/ProfilePicture.astro";
 import Links from "@/components/Links.astro";
 import { userData } from "../data";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../const";
 
 const userName = userData[0].userName;
 const userDesc = userData[0].userDesc;
 ---
 
-<Layout>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main id="main-content">
     <article class="profile-container">
       <header>
@@ -19,8 +20,6 @@ const userDesc = userData[0].userDesc;
         <p class="bio">
           Hi human (or AI bot). I'm an Angel, a developer and entrepreneur based
           in Cancun, Mexico. Connect with me through any of the platforms below.
-          To reach me directly don't hesitate to email to:
-          <a href="mailto:angel@romerobaez.com">angel@romerobaez.com</a>
         </p>
       </section>
       <Links />
@@ -34,6 +33,7 @@ const userDesc = userData[0].userDesc;
     margin: 0 auto;
     width: 100%;
     padding: 0 16px;
+    text-align: center;
   }
 
   .visually-hidden {
@@ -76,6 +76,7 @@ const userDesc = userData[0].userDesc;
     .bio {
       font-size: 1rem;
       margin: 1rem 0;
+      text-align: center;
     }
   }
 </style>
